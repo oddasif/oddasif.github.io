@@ -1,0 +1,95 @@
+/* Importing Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    /* Setting the base font size as 10px, so as to relatively use in terms of as rem */
+    font-size: 10px;
+
+    /* Color Variables */
+    --header-footer-color: #392F2F;
+    --bold-color: #59A985;
+    --medium-color: #3A7563;
+    --light-color: #E6D3A7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header Styles Starts Here */
+
+header {
+    height: 7rem;
+    background-color: var(--header-footer-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav-bar {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo-text {
+    color: white;
+    font-size: 3.5rem;
+    padding: 0 2rem;
+}
+#logo-text a {
+    color: white;
+    text-decoration: none;
+}
+#logo-text a:hover {
+    color: greenyellow;
+}
+
+#nav-bar ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 3px;
+}
+
+.nav-links:hover{
+    font-weight: bold;
+    background-color: var(--medium-color);
+    color: greenyellow;
+}
+
+/* Header Styles Ends Here */
+
+
+
+
+#home-section {
+    min-height: calc(100vh - 7rem);
+    background-color: var(--medium-color);
+    text-align: center;
+    font-size: 4rem;
+    color: greenyellow;
+}
+
+#about-section {
+    min-height: 100vh;
+    background-color: var(--light-color);
+    opacity: 0.4;
+}
+
+footer {
+    height: 5rem;
+    background-color: var(--header-footer-color);
+}
